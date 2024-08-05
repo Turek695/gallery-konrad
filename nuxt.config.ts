@@ -20,17 +20,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  css: ['~/assets/stylesheet/main.scss'],
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint'
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/stylesheet/_app.scss" as *;'
-        }
-      }
-    }
-  }
 })
