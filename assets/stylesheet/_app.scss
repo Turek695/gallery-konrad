@@ -1,0 +1,14 @@
+@import '_colors.scss';
+
+
+.html {
+	overflow-x: hidden;
+}
+
+.body {
+	min-height: 100vh;
+}
+
+h1 {
+	color: $primary;
+}
