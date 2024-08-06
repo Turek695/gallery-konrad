@@ -1,3 +1,11 @@
+root {
+  --primary: navy;
+  --primary_light: #5050c5;
+  --secondary: olive;
+  --secondary_light: #bebe7f;
+  --bg-light: white;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -7,9 +15,20 @@ body {
 }
 
 h1 {
-  color: navy;
+  color: var(--primary);
 }
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+a,
+button {
+  margin: 4px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--primary_light);
+  outline-offset: 2px;
 }
