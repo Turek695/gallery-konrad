@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  css: ['~/assets/stylesheet/main.scss', '~/assets/stylesheet/colors.scss'],
+  css: ['~/assets/stylesheet/main.scss'],
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint'

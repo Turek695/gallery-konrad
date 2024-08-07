@@ -1,7 +1,8 @@
 :root {
   --primary: navy;
-  --primary_light: #5050c5;
+  --primary-light: #5050c5;
   --secondary: olive;
-  --secondary_light: #bebe7f;
+  --secondary-light: #bebe7f;
   --bg-light: white;
+  --text-light: white;
 }
