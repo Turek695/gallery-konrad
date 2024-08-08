@@ -2,6 +2,7 @@
 	<div class="page_layout">
 		<nav class="page_main-nav shrink-0">
 			<NuxtLink class="main-nav_link" to="/">GK</NuxtLink>
+			<NuxtLink class="main-nav_link" to="/kontakt">Kontakt</NuxtLink>
 		</nav>
 		<main class="page_main-content">
 			<slot />
