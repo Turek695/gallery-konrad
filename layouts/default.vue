@@ -3,7 +3,7 @@
 		<nav class="page_main-nav shrink-0">
 			<NuxtLink class="main-nav_link" to="/">GK</NuxtLink>
 		</nav>
-		<main class="page_main-content shrink-0">
+		<main class="page_main-content">
 			<slot />
 		</main>
 		<footer class="page_footer shrink-0">
@@ -17,10 +17,12 @@
 
 <style scoped>
 .page_layout {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;;
 	height: 100%;
-	background-color: var(--bg_light);
+	background-color: var(--bg-light);
 }
 
 .page_main-content {
@@ -45,6 +47,10 @@
 }
 
 .page_footer {
-	margin-top: auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	background-color: var(--primary);
+	color: var(--text-light);
 }
 </style>
