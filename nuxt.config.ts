@@ -1,11 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'pl'
+  "app": {
+    "head": {
+      "htmlAttrs": {
+        "lang": "pl"
       },
-      title: "Galeria Konrada",
+      "title": "Galeria Konrada",
       "meta": [
         {
           "name": "viewport",
@@ -17,16 +17,16 @@ export default defineNuxtConfig({
       ],
     },
   },
-  compatibilityDate: '2024-04-03',
-  components: [
+  "compatibilityDate": "2024-04-03",
+  "components": [
     {
-      path: '~/components',
-      pathPrefix: false,
+      "path": "~/components",
+      "pathPrefix": false,
     },
   ],
-  css: ['~/assets/stylesheet/main.scss'],
-  devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint'
-  ],
+  "css": ["~/assets/stylesheet/main.scss"],
+  "devtools": { "enabled": true },
+  "modules": [
+    "@nuxt/eslint"
+  ]
 })
