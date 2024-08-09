@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-multiple-template-root -->
 <template>
 	<header class="home_header">
 		<h1>Galeria Konrada</h1>
@@ -5,7 +6,7 @@
 	<section class="home_item-gallery">
 		<h2>Przedmioty</h2>
 		<ul class="gallery">
-			<li class="gallery_item" v-for="item in items">
+			<li v-for="item in items" class="gallery_item"  :key="item.id">
 				<NuxtLink class="" :to="`/przedmiot/{item.id}`">
 					
 					{{ item.name }}
@@ -16,16 +17,13 @@
 </template>
 
 <script setup>
-
 const items = [
-	{id: 1, name: "niebieska łyżka"},
-	{id: 2, name: "żółta miska"}
-]
-
+	{ id: 1, name: "niebieska łyżka" },
+	{ id: 2, name: "żółta miska" },
+];
 </script>
 
 <style scoped lang="scss">
-
 .gallery {
 	display: flex;
 	gap: 16px;
